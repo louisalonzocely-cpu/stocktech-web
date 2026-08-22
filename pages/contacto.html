@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | StockTech</title>
+</head>
+<body>
+
+    <!-- ====== ENCABEZADO ====== -->
+    <h1>StockTech - Contacto</h1>
+
+    <img src="../assets/img/logo-stocktech.png" alt="Logo de StockTech" width="200px" height="200px">
+
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#quienes-somos">Quienes somos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="reserva.html">Reserva una demo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <hr>
+
+    <!-- ====== FORMULARIO DE CONTACTO ====== -->
+    <h2>Formulario de Contacto</h2>
+    <p>Déjanos tu mensaje y nuestro equipo te responderá en el menor tiempo posible.
+       Los campos marcados con <em>*</em> son obligatorios.
+    </p>
+
+    <form action="#" method="post">
+
+        <!-- Datos personales -->
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <p>
+                <label for="nombre">Nombre completo <em>*</em></label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+            </p>
+
+            <p>
+                <label for="email">Correo electrónico <em>*</em></label><br>
+                <input type="email" id="email" name="email" placeholder="Ej: juan@empresa.com" required>
+            </p>
+
+            <p>
+                <label for="telefono">Teléfono</label><br>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: +57 300 000 0000">
+            </p>
+
+            <p>
+                <label for="empresa">Empresa</label><br>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+            </p>
+        </fieldset>
+
+        <!-- Motivo de contacto -->
+        <fieldset>
+            <legend>Motivo de contacto</legend>
+
+            <p>
+                <label for="motivo">Motivo</label><br>
+                <select id="motivo" name="motivo">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="cotizacion">Cotización de un plan</option>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <!-- Mensaje -->
+        <fieldset>
+            <legend>Mensaje</legend>
+
+            <p>
+                <label for="mensaje">Mensaje <em>*</em> (máximo 500 caracteres)</label><br>
+                <textarea id="mensaje" name="mensaje" rows="6" cols="50" maxlength="500"
+                          placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+            </p>
+        </fieldset>
+
+        <!-- Aceptación y botones -->
+        <p>
+            <input type="checkbox" id="politica" name="politica" required>
+            <label for="politica">Acepto la política de tratamiento de datos personales <em>*</em></label>
+        </p>
+
+        <p>
+            <button type="submit">Enviar mensaje</button>
+            <button type="reset">Limpiar formulario</button>
+        </p>
+
+    </form>
+
+    <hr>
+
+    <!-- ====== INFORMACION ALTERNATIVA DE CONTACTO ====== -->
+    <h2>Otros canales de contacto</h2>
+    <ul>
+        <li><strong>Correo:</strong> servicioalcliente@stocktech.com</li>
+        <li><strong>Teléfono:</strong> +57 (601) 000 0000</li>
+        <li><strong>Horario:</strong> Lunes a viernes, 8:00 a.m. - 6:00 p.m.</li>
+    </ul>
+
+    <hr>
+
+    <footer>
+        <p><strong>StockTech</strong> - Sistema de Gestión Integral de Inventario, Ventas y Facturación</p>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="reserva.html">Reserva una demo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <p>&copy; 2026 StockTech. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
